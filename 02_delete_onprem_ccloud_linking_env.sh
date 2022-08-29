@@ -28,7 +28,7 @@ echo "ccloud API Keys"
 confluent api-key delete $CLUSTERID2KEY
 
 echo "ccloud cluster"
-confluent kafka cluster delete $CCLOUD_CLUSTERID2 --environment $envirENVIDonment
+confluent kafka cluster delete $CCLOUD_CLUSTERID2 --environment $ENVID
 
 echo "ccloud environment"
 confluent environment delete $ENVID
