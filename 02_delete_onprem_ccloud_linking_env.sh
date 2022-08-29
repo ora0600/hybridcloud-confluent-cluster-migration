@@ -1,4 +1,5 @@
 #!/bin/bash
+export BASEDIR=$(cat basedir)
 export ENVID=$(awk '/id:/{print $NF}' env)
 export CLUSTERID2KEY=$(awk '/key:/{print $NF}' clusterid2_key)
 export CLUSTERID2SECRET=$(awk '/secret:/{print $NF}' clusterid2_key )
