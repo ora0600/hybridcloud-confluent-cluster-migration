@@ -219,3 +219,13 @@ confluent kafka topic consume $topic1 --from-beginning --environment $environmen
 
 # End of DR Cluster Setup
 echo "<<<<<<<<<<<< End of Cluster Setup"
+
+#play around
+echo ">>>>>>>>>>PLAY>>>>>>>>>>"
+echo ">>> open 2 Terminals, produce to source and consume from destination"
+echo ">>> Produce:"
+echo "kafka-console-producer --topic $topic1 --bootstrap-server localhost:9092 --producer.config $BASEDIR/CP-command.config"
+echo ">>> Consume:"
+echo "confluent kafka topic consume $topic1 --environment $environment --cluster $destination_id --api-key $destinationkey"
+echo "<<<<<<<<<PLAY END<<<<<<<<<"
+
